@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:rgb(223, 217, 217);
+    color: black;
+    font-family: cursive;
+    transition-duration: 400ms;
+}
+.crud{
+    width: 80%;
+    margin: auto;
+}
+.head{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+input{
+    width: 100%;
+    height: 30px;
+    outline: none;
+    border: none;
+    background-color: rgb(187, 183, 183);
+    margin: 4px 0;
+    border-radius: 4px;
+    padding: 5px;
+    color: rgb(0, 0, 0);
+    transition-duration: 200ms;
+    font-family: cursive;
+  
+}
+input:focus{
+    background-color: rgb(238, 236, 236);
+    transform: scale(1.1);
+
+}
+.fo1{
+    background-color: #111 ;
+    color: white;
+    }
+    .fo1:focus{
+        background-color: #000;
+    }   
+.price input::-webkit-outer-spin-button,
+.price input::-webkit-inner-spin-button{
+  -webkit-appearance: none;
+  margin: 0;
+}
+.price input{
+    width: 20%;
+}
+#total{
+    background: rgb(255, 5, 101);
+    padding: 8px 2px;
+    border-radius: 4px;
+  
+   
+   
+}
+#total::before{
+    content: 'Total: ';
+  
+}
+button{
+    width: 100%;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(139, 4, 250);
+    color: rgb(8, 8, 8);
+    border-radius: 20px;
+    transition-duration: 500ms;
+    margin: 4px 0;
+    font-family: cursive;
+   
+}
+button:hover{
+    background-color: rgb(132, 82, 250);
+    letter-spacing: 1px;
+}
+.btnsearch{
+display: flex;
+justify-content: space-between;
+}
+.btnsearch button{ 
+    width: 45%;
+}
+table{
+   width: 100%; 
+   text-align: center;
+   margin: 10px 0;
+
+}
+table th{
+    text-transform: uppercase;
+}
+th,td{
+    padding: 5px;
+}
+#deleteAll{
+    margin: 20px 0;
+}
+@media all and (max-width: 786px){
+  table{
+      margin: 1px 0;
+      font-size: 12px;
+  }
+  th,td{
+    padding: 2px;
+}
+button{
+    width: 100%;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(78, 4, 250);
+    color: #fff;
+    border-radius: 20px;
+    transition-duration: 500ms;
+    margin: 2px 0;
+    font-family: cursive;
+    font-size: 12px;
+}
+
+  }
+  @media all and (max-width: 600px){
+   body{
+    font-family: 'Hubballi', cursive;
+   }
+   input{
+    font-family: 'Hubballi', cursive;
+   }
+    table{
+        margin: 1px 0;
+        font-size: 11px;
+        font-family: 'Hubballi', cursive;
+    }
+    th,td{
+      padding: 2px;
+  }
+  button{
+      width: 100%;
+      height: 30px;
+      border: none;
+      cursor: pointer;
+      background-color: rgb(78, 4, 250);
+      color: #fff;
+      border-radius: 20px;
+      transition-duration: 500ms;
+      margin: 2px 0;
+     
+      font-size: 12px;
+      font-family: 'Hubballi', cursive;
+  }
+  
+    }
+    #delete{
+        background-color: rgb(214, 6, 93);
+    }
+    #delete:hover{
+        background-color: rgb(255, 81, 154);
+    }
+#bo{
+     position: absolute;
+     right: 5%;
+     top: 2%;
+     height: 30px;
+     width: 70px;
+    border-radius: 30px;
+    transition-duration: 400ms;
+    overflow: hidden;
+    box-shadow: 0px 2px 2px 2px rgba(27, 27, 27, 0.192);
+    background-color: rgb(187, 183, 183);
+    animation-name: ch ;
+    animation-duration: 600ms;
+    animation-iteration-count: 1;
+    transform: rotate(0deg);
+    animation-play-state: paused;
+}
+@keyframes ch{
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(-20deg);
+    }
+    50%{
+        transform: rotate(20deg);
+    }
+    75%{
+        transform: rotate(-20deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+
+
+}
+#bo:hover{
+    animation-play-state: running;
+    
+}
+
+
+
+
+#boi{
+    height: 26px;
+    margin-top: 2.6px;
+    margin-left: 2px;
+    transition-duration: 800ms;
+}
