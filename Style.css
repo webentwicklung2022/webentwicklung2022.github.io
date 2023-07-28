@@ -40,6 +40,13 @@ body {
     border-radius: 16px;
     height: 40px;
     margin-bottom: 40px;
+    transition-duration: 200ms;
+  }
+  button:hover{
+    background-color: rgb(22, 236, 201);
+  }
+  button:active{
+    transform: scale(.9);
   }
   
   #weatherContainer {
