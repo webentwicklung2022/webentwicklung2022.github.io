@@ -45,7 +45,7 @@ body {
   #weatherContainer {
     margin-top: 20px;
     opacity: 0;
-    transition-duration: 800ms;
+    transition-duration: 1s;
     transform: translateY(300px);
     font-size: 25px;
     
